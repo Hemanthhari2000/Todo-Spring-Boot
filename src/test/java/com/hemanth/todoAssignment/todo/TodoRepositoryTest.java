@@ -24,4 +24,15 @@ public class TodoRepositoryTest {
 
         assertEquals(todoRepository.findById(todo.getId()).get(), todo);
     }
+
+    @Test
+    void shouldBeAbleToUpdateAnExistingTodoTask() {
+        todoRepository.save(todo);
+        String updatedDescription = "This is the [UPDATED] first todo task";
+
+        todo.setDescription(updatedDescription);
+        todoRepository.save(todo);
+
+        assertEquals(todoRepository.findById(todo.getId()).get().getDescription(), updatedDescription);
+    }
 }
