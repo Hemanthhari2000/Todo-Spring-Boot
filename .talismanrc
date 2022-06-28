@@ -3,4 +3,8 @@ fileignoreconfig:
   checksum: 4d6a1a4d29e7bb13f6787c90b96877b7fce11e4027683806a8d0cd104b708423
 - filename: mvnw
   checksum: 525d6897dc14f8a1884cdb1cfd0fdf8179230a04afcddca9158c09040117ae85
+
+- filename: src/main/resources/db/migration/V1.1__CreateTodosTable.sql
+  checksum: 693bcd76bf3b374f99d90c0e328763ee4a33577c971bf7fb72595b14f0205d04
+
 version: ""
