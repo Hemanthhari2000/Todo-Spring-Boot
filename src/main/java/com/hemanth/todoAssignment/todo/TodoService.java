@@ -32,7 +32,7 @@ public class TodoService {
         add(todo);
     }
 
-    public void delete(Todo todo) {
-        todoRepository.delete(todo);
+    public void removeById(Long id){
+        todoRepository.deleteById(id);
     }
 }

@@ -7,7 +7,6 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.verify;
 
 @ExtendWith(MockitoExtension.class)
@@ -55,8 +54,9 @@ class TodoServiceTest {
 
     @Test
     void shouldBeAbleToDeleteTheExistingTodoUsingTodoService() {
-        todoService.delete(todo);
+        todoService.removeById(todo.getId());
 
-        verify(todoRepository).delete(todo);
+        verify(todoRepository).deleteById(todo.getId());
     }
+
 }

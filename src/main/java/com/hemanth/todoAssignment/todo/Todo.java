@@ -6,7 +6,6 @@ import java.util.Objects;
 @Entity
 @Table(name = "todos")
 public class Todo {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -60,11 +59,11 @@ public class Todo {
         this.description = description;
     }
 
-    public Boolean getCompleted() {
+    public Boolean getIsCompleted() {
         return isCompleted;
     }
 
-    public void setCompleted(Boolean completed) {
+    public void setIsCompleted(Boolean completed) {
         isCompleted = completed;
     }
 }
