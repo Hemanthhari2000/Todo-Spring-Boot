@@ -1,6 +1,8 @@
 fileignoreconfig:
+
 - filename: src/main/resources/application.properties
-  checksum: 4d6a1a4d29e7bb13f6787c90b96877b7fce11e4027683806a8d0cd104b708423
+  checksum:  82482b983e78aa17f82a1ef9a645bde01047085ff8ca14c4a1b9cc5345e61f8e
+
 - filename: mvnw
   checksum: 525d6897dc14f8a1884cdb1cfd0fdf8179230a04afcddca9158c09040117ae85
 
